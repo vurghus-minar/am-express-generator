@@ -1,0 +1,29 @@
+{
+  "name": "am-express-generator",
+  "version": "1.0.0",
+  "description": "Express MVC scaffold and file generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vurghus-minar/am-express-generator.git"
+  },
+  "keywords": [
+    "Express",
+    "generator",
+    "mvc",
+    "generator",
+    "node"
+  ],
+  "author": "Vurghus Minar <vurghus.minar@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vurghus-minar/am-express-generator/issues"
+  },
+  "homepage": "https://github.com/vurghus-minar/am-express-generator#readme",
+  "devDependencies": {
+    "fs-extra": "^7.0.1"
+  }
+}
