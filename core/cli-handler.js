@@ -20,6 +20,7 @@ module.exports = {
       resourceName = userArgs[1];
 
     if (resourceType === "help") {
+      help();
     }
 
     switch (resourceType) {
