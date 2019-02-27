@@ -11,13 +11,19 @@ var child_process = require("child_process");
 
 module.exports = {
   controller: function(resourceName) {
-    console.log(controller.name);
+    console.log("controller");
   },
   model: function(resourceName) {
-    console.log(model.name);
+    console.log("model");
   },
   request: function(resourceName) {
-    console.log(request.name);
+    console.log("request");
+  },
+  route: function(resourceName) {
+    console.log("route");
+  },
+  all: function(resourceName) {
+    console.log("all");
   },
   generate: function(projecttype, projectname) {
     if (
