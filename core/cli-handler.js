@@ -20,8 +20,11 @@ module.exports = {
       resourceName = userArgs[1];
 
     if (resourceType === "help") {
+      process.stdout.write("Help is at hand!");
+      process.stdout.write("help === Display help");
+      process.stdout.write("<resource> <name> === e.g controller myController");
       process.stdout.write(
-        "Help is at hand!\rhelp === Display help\r<resource> <name> === e.g controller myController\r<resource> options are controller|model|request|route|all\r"
+        "<resource> options are controller|model|request|route|all"
       );
       process.exit();
     }
