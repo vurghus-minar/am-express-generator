@@ -20,7 +20,13 @@ module.exports = {
       resourceName = userArgs[1];
 
     if (resourceType === "help") {
-      help();
+      process.stdout.write(
+        "Help is at hand! \n",
+        "help === Display help \n",
+        "<resource> <name> === e.g controller myController \n",
+        "<resource> options are controller|model|request|route|all"
+      );
+      process.exit();
     }
 
     switch (resourceType) {
@@ -40,14 +46,5 @@ module.exports = {
         console.error("Invalid arguments supplied!");
         break;
     }
-  },
-  help: function() {
-    process.stdout.write(
-      "Help is at hand! \n",
-      "help === Display help \n",
-      "<resource> <name> === e.g controller myController \n",
-      "<resource> options are controller|model|request|route|all"
-    );
-    process.exit();
   }
 };
