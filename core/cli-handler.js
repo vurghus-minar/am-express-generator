@@ -23,26 +23,35 @@ module.exports = {
       process.stdout.write("Help is at hand! \n");
       process.stdout.write("help === Display help \n");
       process.stdout.write(
-        "<resource> <name> === e.g controller myController \n"
+        "controller <name> === e.g controller name, generates controller scaffold \n"
       );
       process.stdout.write(
-        "<resource> options are controller|model|request|route|all \n"
+        "model <Name> === e.g model name, generates model scaffold \n"
+      );
+      process.stdout.write(
+        "route <name> === e.g route name, generates route scaffold \n"
+      );
+      process.stdout.write(
+        "request <name> === e.g request name, generates request scaffold \n"
+      );
+      process.stdout.write(
+        "all <name> === e.g all name, generates complete scaffold \n"
       );
       process.exit();
     }
 
     switch (resourceType) {
       case "controller":
-        generate.controller(resourceName);
+        generate.controller(resourceType, resourceName);
         break;
       case "model":
-        generate.model(resourceName);
+        generate.model(resourceType, resourceName);
         break;
       case "request":
-        generate.request(resourceName);
+        generate.request(resourceType, resourceName);
         break;
       case "route":
-        generate.route(resourceName);
+        generate.route(resourceType, resourceName);
         break;
       default:
         console.error("Invalid arguments supplied!");
