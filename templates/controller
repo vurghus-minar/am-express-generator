@@ -1,0 +1,22 @@
+const {{ResourceName}} = require("../models/{{ResourceName}}");
+const {{resourceName}}Request = require("../requests/{{resourceName}}Request");
+const create{{ResourceName}}Schema = {{resourceName}}Request.create{{ResourceName}}Schema;
+const update{{ResourceName}}Schema = {{resourceName}}Request.update{{ResourceName}}Schema;
+
+module.exports = {
+  index(req, res, next) {
+    res.send("Index");
+  },
+  view(req, res, next) {
+    res.send("Index");
+  },
+  create(req, res, next) {
+    res.send("Index");
+  },
+  update(req, res, next) {
+    res.send("Index");
+  },
+  delete(req, res, next) {
+    res.send("Index");
+  }
+};
