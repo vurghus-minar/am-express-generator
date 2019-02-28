@@ -59,7 +59,7 @@ module.exports = {
               }
               let result = data.replace(/{{resourceName}}/g, resourceName);
 
-              result = data.replace(
+              result = result.replace(
                 /{{ResourceName}}/g,
                 module.exports.capitalize(resourceName)
               );
