@@ -54,7 +54,9 @@ module.exports = {
               });
             });
 
-            console.log(resourceType + resourceName + " created successfully!");
+            console.log(
+              resourceType + " " + resourceName + " created successfully!"
+            );
           }
         });
       }
