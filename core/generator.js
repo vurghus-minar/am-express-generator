@@ -10,21 +10,6 @@ const fs = require("fs-extra");
 const child_process = require("child_process");
 
 module.exports = {
-  controller: function(resourceType, resourceName) {
-    module.exports.generate(resourceType, resourceName);
-  },
-  model: function(resourceType, resourceName) {
-    console.log("model");
-  },
-  request: function(resourceType, resourceName) {
-    console.log("request");
-  },
-  route: function(resourceType, resourceName) {
-    console.log("route");
-  },
-  all: function(resourceType, resourceName) {
-    console.log("all");
-  },
   capitalize: function(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   },

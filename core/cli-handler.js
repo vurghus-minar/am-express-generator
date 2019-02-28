@@ -42,16 +42,16 @@ module.exports = {
 
     switch (resourceType) {
       case "controller":
-        generate.controller(resourceType, resourceName);
-        break;
       case "model":
-        generate.model(resourceType, resourceName);
-        break;
       case "request":
-        generate.request(resourceType, resourceName);
-        break;
       case "route":
-        generate.route(resourceType, resourceName);
+        generate.generate(resourceType, resourceName);
+        break;
+      case "all":
+        const resources = ["controller", "model", "request", "route"];
+        resources.forEach(resource => {
+          generate.generate(resource, resourceName);
+        });
         break;
       default:
         console.error("Invalid arguments supplied!");
