@@ -1,0 +1,11 @@
+const Joi = require("joi");
+
+const nameSchema = Joi.string().regex(/[a-zA-Z]+/);
+
+exports.create{{ResourceName}}Schema = Joi.object().keys({
+  name: nameSchema.required()
+});
+
+exports.update{{ResourceName}}Schema = Joi.object().keys({
+  name: nameSchema
+});

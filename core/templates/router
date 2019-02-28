@@ -1,0 +1,10 @@
+const {{resourceName}}Controller = require("../controllers/{{resourceName}}Controller");
+
+module.exports = app => {
+  // {{ResourceName}} routes
+  app.get("/{{resourceName}}", {{resourceName}}Controller.index);
+  app.get("/{{resourceName}}/:id", {{resourceName}}Controller.view);
+  app.post("/{{resourceName}}", {{resourceName}}Controller.create);
+  app.put("/{{resourceName}}", {{resourceName}}Controller.update);
+  app.delete("/{{resourceName}}/:id", {{resourceName}}Controller.delete);
+};
