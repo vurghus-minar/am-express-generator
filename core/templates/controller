@@ -1,4 +1,4 @@
-const {{ResourceName}} = require("../models/{{ResourceName}}");
+const {{ResourceName}} = require("../models/{{resourceName}}Model");
 const {{resourceName}}Request = require("../requests/{{resourceName}}Request");
 const create{{ResourceName}}Schema = {{resourceName}}Request.create{{ResourceName}}Schema;
 const update{{ResourceName}}Schema = {{resourceName}}Request.update{{ResourceName}}Schema;
