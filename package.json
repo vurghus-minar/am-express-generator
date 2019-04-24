@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "amexgen": "index.js"
+    "amexgen": "./bin/amexgen.js"
   },
   "repository": {
     "type": "git",
