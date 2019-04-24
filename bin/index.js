@@ -8,7 +8,7 @@ Version : 1.0
 **/
 
 //Load Modules
-var clihandler = require("./core/cli-handler");
+var clihandler = require("../core/cli-handler");
 
 //Initialize CLI Handler
 clihandler.listen();
