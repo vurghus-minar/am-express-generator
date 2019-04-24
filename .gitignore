@@ -2,6 +2,9 @@
 package-lock.json
 yarn.lock
 
+# Dirs
+demo/
+
 # Logs
 logs
 *.log

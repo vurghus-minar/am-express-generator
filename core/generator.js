@@ -7,7 +7,6 @@ Version : 1.0
 
 //Module Dependencies
 const fs = require("fs-extra");
-const child_process = require("child_process");
 
 module.exports = {
   capitalize: function(string) {
